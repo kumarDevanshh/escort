@@ -460,6 +460,786 @@ header{
   .info-images{
     justify-content:center;
   }
+/* ========== MOBILE ACCESS SECTION ========== */
+.mobile-access{
+  padding:80px 6%;
+}
+
+.mobile-box{
+  background:#fdeff5;
+  border-radius:24px;
+  padding:50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:40px;
+}
+
+/* LEFT */
+.mobile-left h2{
+  font-size:32px;
+  color:#111;
+  margin-bottom:10px;
+}
+
+.mobile-left .sub{
+  color:#444;
+  margin-bottom:30px;
+}
+
+/* QR ROW */
+.qr-row{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+.qr-row img{
+  width:120px;
+  border-radius:12px;
+}
+
+.qr-row p{
+  color:#333;
+  font-size:14px;
+  line-height:1.5;
+}
+
+.qr-row span{
+  color:#ff007a;
+  font-weight:600;
+}
+
+/* BUTTONS */
+.mobile-buttons{
+  display:flex;
+  gap:15px;
+}
+
+.whatsapp-btn{
+  background:#25d366;
+  border:none;
+  padding:12px 22px;
+  border-radius:25px;
+  color:#fff;
+  font-weight:500;
+  cursor:pointer;
+}
+
+.call-btn-2{
+  background:#ff007a;
+  border:none;
+  padding:12px 22px;
+  border-radius:25px;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* RIGHT */
+.mobile-right{
+  display:flex;
+  gap:20px;
+}
+
+.phone{
+  width:150pxpx;
+  height:240px;
+  border-radius:22px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.phone i{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.phone.pink{
+  background:linear-gradient(135deg,#ff5ca8,#ff007a);
+}
+
+.phone.purple{
+  background:linear-gradient(135deg,#a56eff,#6a4cff);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .mobile-box{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .qr-row{
+    flex-direction:column;
+  }
+
+  .mobile-right{
+    justify-content:center;
+  }
+}
+}
+.mobile-access{
+  background:#1c1c1c;
+}
+
+.mobile-box{
+  background:#fdeff5 !important;
+  border-radius:24px;
+  padding:50px;
+  max-width:1100px;
+  margin:80px auto;
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+}
+/* FORCE TEXT COLOR FOR MOBILE ACCESS */
+.mobile-box{
+  color:#111;   /* dark text */
+}
+
+.mobile-box h2,
+.mobile-box p{
+  color:#111;
+}
+
+.mobile-box .sub{
+  color:#444;
+}
+/* ================= MOBILE ACCESS (POLISHED) ================= */
+
+.mobile-access{
+  padding:100px 6%;
+}
+
+.mobile-box{
+  max-width:1150px;
+  margin:auto;
+  background:#fdeff5;
+  border-radius:28px;
+  padding:60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:70px;
+  box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+/* LEFT */
+.mobile-left{
+  max-width:520px;
+}
+
+.mobile-left h2{
+  font-size:34px;
+  line-height:1.3;
+  color:#111;
+  margin-bottom:10px;
+}
+
+.mobile-left .sub{
+  color:#555;
+  margin-bottom:30px;
+}
+
+/* QR CARD */
+.qr-card{
+  display:flex;
+  gap:22px;
+  align-items:center;
+  background:#fff;
+  padding:20px;
+  border-radius:18px;
+  margin-bottom:30px;
+}
+
+.qr-card img{
+  width:140px;
+  border-radius:10px;
+}
+
+.qr-card p{
+  font-size:14px;
+  color:#333;
+  line-height:1.5;
+}
+
+.qr-card span{
+  color:#ff007a;
+  font-weight:600;
+}
+
+/* BUTTONS */
+.mobile-buttons{
+  display:flex;
+  gap:15px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:13px 26px;
+  border-radius:30px;
+  color:#fff;
+  font-weight:500;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.btn.whatsapp{
+  background:#25d366;
+}
+
+.btn.call{
+  background:#ff007a;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* RIGHT SIDE */
+.mobile-right{
+  display:flex;
+  gap:26px;
+}
+
+.phone{
+  width:170px;
+  height:280px;
+  border-radius:30px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  text-align:center;
+  font-size:16px;
+  box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+
+.phone i{
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+.phone.pink{
+  background:linear-gradient(135deg,#ff5ca8,#ff007a);
+}
+
+.phone.purple{
+  background:linear-gradient(135deg,#a56eff,#6a4cff);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .mobile-box{
+    flex-direction:column;
+    padding:40px 25px;
+    text-align:center;
+  }
+
+  .qr-card{
+    flex-direction:column;
+  }
+
+  .mobile-buttons{
+    justify-content:center;
+  }
+
+  .mobile-right{
+    justify-content:center;
+  }
+}/* ========== RAASLEELA DIFFERENCE ========== */
+.difference-section{
+  padding:100px 8%;
+  background:radial-gradient(circle at top,#2b2f55,#151728);
+  border-radius:30px;
+  margin:100px auto;
+  text-align:center;
+}
+
+.small-title{
+  color:#ff007a;
+  font-size:12px;
+  letter-spacing:2px;
+  font-weight:600;
+}
+
+.main-title{
+  font-size:42px;
+  margin:10px 0;
+}
+
+.subtitle{
+  color:#ccc;
+  font-size:15px;
+  margin-bottom:50px;
+}
+
+/* CARD GRID */
+.diff-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+/* CARD */
+.diff-card{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  color:#111;
+}
+
+/* TOP SPLIT */
+.card-top{
+  display:flex;
+  height:220px;
+  position:relative;
+  color:#fff;
+}
+
+.card-top.pink{ background:linear-gradient(135deg,#ff007a,#ff4fa3); }
+.card-top.purple{ background:linear-gradient(135deg,#7b2cff,#b56dff); }
+.card-top.blue{ background:linear-gradient(135deg,#3a7bd5,#00d2ff); }
+
+.half{
+  width:50%;
+  padding:20px;
+  text-align:left;
+  position:relative;
+}
+
+.half.after{
+  background:rgba(0,0,0,.15);
+}
+
+.half h5{
+  font-size:12px;
+  margin-bottom:10px;
+}
+
+.half ul{
+  list-style:none;
+  font-size:13px;
+  line-height:1.6;
+}
+
+.tag{
+  position:absolute;
+  bottom:12px;
+  left:12px;
+  font-size:11px;
+  padding:4px 10px;
+  border-radius:20px;
+}
+
+.tag.dark{ background:#111; color:#fff; }
+.tag.light{ background:#fff; color:#111; }
+
+/* BOTTOM */
+.card-bottom{
+  padding:20px;
+  text-align:left;
+}
+
+.card-bottom h4{
+  font-size:15px;
+  margin-bottom:6px;
+}
+
+.card-bottom p{
+  font-size:13px;
+  color:#666;
+  margin-bottom:15px;
+}
+
+.card-bottom button{
+  background:none;
+  border:1px solid #111;
+  padding:8px 16px;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:13px;
+}
+
+/* BADGES */
+.badge{
+  font-size:10px;
+  padding:3px 8px;
+  border-radius:12px;
+  margin-left:6px;
+}
+
+.badge.green{ background:#d4f8d4; color:#137333; }
+.badge.purple{ background:#eedbff; color:#6a1b9a; }
+.badge.gold{ background:#fff0cc; color:#b26a00; }
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .main-title{ font-size:32px; }
+  .card-top{ flex-direction:column; height:auto; }
+  .half{ width:100%; }
+}
+/* ========== REAL REVIEWS ========== */
+.reviews-section{
+  padding:80px 8%;
+  background:#2b2e33;
+  color:#fff;
+}
+
+.reviews-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:40px;
+}
+
+.reviews-head h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.reviews-head p{
+  font-size:14px;
+  color:#ccc;
+  max-width:700px;
+  line-height:1.6;
+}
+
+.reviews-head a{
+  color:#6aa9ff;
+  text-decoration:none;
+}
+
+.view-all{
+  background:none;
+  border:1px solid #fff;
+  color:#fff;
+  padding:6px 18px;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+/* GRID */
+.reviews-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.review-card{
+  background:#111;
+  padding:24px;
+  border-radius:14px;
+  position:relative;
+}
+
+/* TEXT */
+.review-text{
+  font-size:14px;
+  color:#ddd;
+  line-height:1.6;
+  margin-bottom:20px;
+}
+
+/* STARS */
+.stars{
+  margin-bottom:20px;
+}
+
+.star{
+  font-size:18px;
+  color:#444;
+}
+
+.star.filled{
+  color:#ff4fa3;
+}
+
+/* FOOTER */
+.review-footer{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  border-top:1px solid #222;
+  padding-top:14px;
+}
+
+.review-footer img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+
+.review-footer small{
+  display:block;
+  color:#aaa;
+  font-size:11px;
+}
+
+.review-footer span{
+  font-size:11px;
+  color:#888;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .reviews-head{
+    flex-direction:column;
+    gap:15px;
+  }
+}
+/* ========== TRUST SECTION ========== */
+.trust-section{
+  margin:80px auto;
+  max-width:1100px;
+  padding:80px 6%;
+  background:radial-gradient(circle at top,#2b2e35,#15171b);
+  border-radius:28px;
+  text-align:center;
+  color:#fff;
+}
+
+.trust-section h2{
+  font-size:40px;
+  line-height:1.3;
+  margin-bottom:25px;
+}
+
+.trust-section h2 span{
+  color:#ff007a;
+}
+
+.trust-section p{
+  max-width:750px;
+  margin:auto;
+  font-size:15px;
+  color:#ccc;
+  line-height:1.8;
+}
+
+.trust-section a{
+  color:#6aa9ff;
+  text-decoration:none;
+}
+/* ========== FIND MATCH ========== */
+.find-match{
+  padding:70px 6%;
+  background:#fdeff5;
+  border-radius:26px;
+  margin:80px auto;
+  max-width:1200px;
+}
+
+.find-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.find-head h2{
+  font-size:26px;
+  color:#111;
+}
+
+.verified-pill{
+  background:#fff;
+  padding:8px 16px;
+  border-radius:30px;
+  font-size:13px;
+  display:flex;
+  gap:8px;
+  align-items:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+/* GRID */
+.match-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+.match-card{
+  background:#fff;
+  border-radius:18px;
+  padding:26px 20px;
+  text-align:center;
+  cursor:pointer;
+  transition:.3s ease;
+}
+
+.match-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.match-card i{
+  font-size:26px;
+  padding:14px;
+  border-radius:14px;
+  margin-bottom:10px;
+}
+
+.match-card p{
+  font-size:14px;
+  font-weight:500;
+  color:#222;
+}
+
+/* ICON COLORS */
+.pink{ background:#ffe2f0; color:#ff007a; }
+.purple{ background:#efe5ff; color:#7a4cff; }
+.yellow{ background:#fff3c4; color:#e6a800; }
+.red{ background:#ffe1e1; color:#ff4d4d; }
+.orange{ background:#ffe8cc; color:#ff8c00; }
+.blue{ background:#e1efff; color:#2f80ff; }
+/* ========== GUARANTEE SECTION ========== */
+
+.guarantee-section{
+  padding:90px 6%;
+  background:#2b2e33;
+  color:#fff;
+}
+
+/* TITLE */
+.guarantee-title{
+  font-size:28px;
+  margin-bottom:40px;
+}
+
+/* ICON ROW */
+.guarantee-icons{
+  display:flex;
+  gap:50px;
+  margin-bottom:60px;
+  flex-wrap:wrap;
+}
+
+.g-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.g-item i{
+  font-size:22px;
+  padding:14px;
+  border-radius:50%;
+}
+
+.g-item p{
+  font-size:14px;
+  line-height:1.4;
+}
+
+/* ICON COLORS */
+.pink{ background:#ffe2f0; color:#ff007a; }
+.blue{ background:#e1efff; color:#2f80ff; }
+.purple{ background:#efe5ff; color:#7a4cff; }
+.green{ background:#e3f7eb; color:#28a745; }
+
+/* MAIN CARD */
+.guarantee-card{
+  display:flex;
+  border-radius:26px;
+  overflow:hidden;
+  background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1520974735194-8d1c1c1b8c7d")
+    center/cover no-repeat;
+}
+
+/* LEFT PINK */
+.guarantee-left{
+  background:#ff007a;
+  padding:50px;
+  min-width:280px;
+}
+
+.guarantee-left h3{
+  font-size:26px;
+  line-height:1.3;
+}
+
+.guarantee-left span{
+  font-weight:700;
+}
+
+/* RIGHT WHITE */
+.guarantee-right{
+  background:#fff;
+  color:#111;
+  padding:50px;
+  flex:1;
+}
+
+.guarantee-right h4{
+  font-size:18px;
+  margin-bottom:12px;
+}
+
+.guarantee-right p{
+  font-size:14px;
+  color:#555;
+  margin-bottom:25px;
+  line-height:1.6;
+}
+
+.guarantee-right span{
+  color:#ff007a;
+  font-weight:600;
+}
+
+/* BUTTONS */
+.guarantee-buttons{
+  display:flex;
+  gap:14px;
+}
+
+.btn{
+  padding:12px 24px;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+}
+
+.btn.primary{
+  background:#ff007a;
+  color:#fff;
+}
+
+.btn.outline{
+  border:1px solid #ff007a;
+  color:#ff007a;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .guarantee-icons{
+    gap:25px;
+  }
+
+  .guarantee-card{
+    flex-direction:column;
+  }
+
+  .guarantee-left{
+    min-width:auto;
+  }
 }
 
 </style>
@@ -704,6 +1484,482 @@ New Arrivals Every Week – Stay Tuned 🔥 Hyderabad Runs On Raasleela!
 
   </div>
 </section>
+<section class="top-escorts">
+
+  <!-- HEADING ROW -->
+  <div class="top-escorts-head">
+    <div>
+      <h2>HYDERABAD ESCORTS</h2>
+      <p>70  elite female escorts
+      </p>
+    </div>
+
+    <button class="view-all">VIEW ALL</button>
+  </div>
+
+  <!-- CARDS GRID -->
+  <div class="escorts-grid">
+
+    <!-- CARD 1 -->
+    <div class="escort-card">
+      <span class="vip-badge">VIP</span>
+
+      <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb" alt="Escort">
+
+      <div class="escort-info">
+        <small>MG ROAD</small>
+        <h4>Jannat</h4>
+
+        <div class="price">
+          ₹8,500 <span>/ session</span>
+        </div>
+
+        <div class="escort-actions">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="escort-card">
+      <span class="vip-badge">VIP</span>
+
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" alt="Escort">
+
+      <div class="escort-info">
+        <small>ELECTRONIC CITY</small>
+        <h4>Keerthi</h4>
+
+        <div class="price">
+          ₹8,000 <span>/ session</span>
+        </div>
+
+        <div class="escort-actions">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="escort-card">
+      <span class="vip-badge">VIP</span>
+
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Escort">
+
+      <div class="escort-info">
+        <small>MADIWALA</small>
+        <h4>Anushka</h4>
+
+        <div class="price">
+          ₹10,000 <span>/ session</span>
+        </div>
+
+        <div class="escort-actions">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="escort-card">
+      <span class="vip-badge">VIP</span>
+
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Escort">
+
+      <div class="escort-info">
+        <small>MG ROAD</small>
+        <h4>Nandini</h4>
+
+        <div class="price">
+          ₹9,000 <span>/ session</span>
+        </div>
+
+        <div class="escort-actions">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    </div>
+
+</section>
+<section class="mobile-access">
+  <div class="mobile-box">
+
+    <!-- LEFT -->
+    <div class="mobile-left">
+      <h2>
+        Get instant Raasleela access<br>
+        on your mobile device.
+      </h2>
+
+      <p class="sub">Book at the speed of WhatsApp</p>
+
+      <div class="qr-card">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://wa.me/911234567890">
+
+        <p>
+          Open camera & scan the QR code to<br>
+          <span>Chat on WhatsApp</span>
+        </p>
+      </div>
+
+      <div class="mobile-buttons">
+        <a href="#" class="btn whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Chat Now
+        </a>
+        <a href="#" class="btn call">
+          <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="mobile-right">
+      <div class="phone pink">
+        <i class="fa-brands fa-whatsapp"></i>
+        <strong>Quick Chat</strong>
+      </div>
+
+      <div class="phone purple">
+        <i class="fa-solid fa-headset"></i>
+        <strong>24/7 Support</strong>
+      </div>
+    </div>
+
+  </div>
+</section><section class="difference-section">
+
+  <p class="small-title">REAL TRANSFORMATIONS</p>
+  <h2 class="main-title">The Raasleela Difference</h2>
+  <p class="subtitle">
+    See how we transform ordinary experiences into extraordinary memories
+  </p>
+
+  <div class="diff-cards">
+
+    <!-- CARD 1 -->
+    <div class="diff-card">
+      <div class="card-top pink">
+        <div class="half before">
+          <h5>OTHER AGENCIES</h5>
+          <ul>
+            <li>✗ Fake Photos</li>
+            <li>✗ Scams</li>
+            <li>✗ No Guarantee</li>
+          </ul>
+          <span class="tag dark">Before</span>
+        </div>
+
+        <div class="half after">
+          <h5>RAASLEELA</h5>
+          <ul>
+            <li>✓ Real Photos</li>
+            <li>✓ Verified</li>
+            <li>✓ Trusted</li>
+          </ul>
+          <span class="tag light">After</span>
+        </div>
+      </div>
+
+      <div class="card-bottom">
+        <h4>AGENCY COMPARISON <span class="badge green">Verified</span></h4>
+        <p>100% Real · Zero Scam</p>
+        <button>See Difference ↗</button>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="diff-card">
+      <div class="card-top purple">
+        <div class="half before">
+          <h5>NEWCOMER</h5>
+          <ul>
+            <li>• Raw Talent</li>
+            <li>• Untrained</li>
+            <li>• Beginner</li>
+          </ul>
+          <span class="tag dark">Before</span>
+        </div>
+
+        <div class="half after">
+          <h5>ELITE</h5>
+          <ul>
+            <li>• Polished</li>
+            <li>• Professional</li>
+            <li>• Exceptional</li>
+          </ul>
+          <span class="tag light">After</span>
+        </div>
+      </div>
+
+      <div class="card-bottom">
+        <h4>ESCORT TRAINING <span class="badge purple">Exceptional</span></h4>
+        <p>4 Weeks · Elite Training</p>
+        <button>Join Us ↗</button>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="diff-card">
+      <div class="card-top blue">
+        <div class="half before">
+          <h5>STANDARD</h5>
+          <ul>
+            <li>• Basic Service</li>
+            <li>• Regular Booking</li>
+            <li>• Simple Plan</li>
+          </ul>
+          <span class="tag dark">Before</span>
+        </div>
+
+        <div class="half after">
+          <h5>VIP PREMIUM</h5>
+          <ul>
+            <li>• Luxury</li>
+            <li>• VIP Treatment</li>
+            <li>• Perfect Evening</li>
+          </ul>
+          <span class="tag light">After</span>
+        </div>
+      </div>
+
+      <div class="card-bottom">
+        <h4>SERVICE UPGRADE <span class="badge gold">Premium</span></h4>
+        <p>Standard → VIP Experience</p>
+        <button>Upgrade Now ↗</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="reviews-section">
+
+  <div class="reviews-head">
+    <div>
+      <h2>REAL REVIEWS</h2>
+      <p>
+        Trusted by thousands for unforgettable experiences since 2015.
+        Real reviews from real clients who experienced our
+        <a href="#">100% verified, elite escorts</a>.
+        Zero scams, complete privacy, and genuine chemistry.
+        <a href="#">Read all reviews</a>.
+      </p>
+    </div>
+
+    <button class="view-all">VIEW ALL</button>
+  </div>
+
+  <div class="reviews-grid">
+
+    <!-- CARD 1 -->
+    <div class="review-card">
+      <p class="review-text">
+        anushka was pretty good. service was nice.
+        booking was easy. raasleela is reliable company.
+        i am happy with my experience. will definitely use again in future.
+      </p>
+
+      <div class="stars">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star">★</span>
+      </div>
+
+      <div class="review-footer">
+        <img src="https://i.pravatar.cc/40?img=12">
+        <div>
+          <strong>Ajay</strong>
+          <small>Feb 18, 2026</small>
+          <span>Rated 4 / 5 reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="review-card">
+      <p class="review-text">
+        lowkey thought this was gonna be mid but Devnshi was
+        actually fire. she was chill af and the whole vibe was immaculate.
+        raasleela really coming through fr.
+      </p>
+
+      <div class="stars">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star">★</span>
+      </div>
+
+      <div class="review-footer">
+        <img src="https://i.pravatar.cc/40?img=32">
+        <div>
+          <strong>Siddharth</strong>
+          <small>Feb 16, 2026</small>
+          <span>Rated 4 / 5 reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="review-card">
+      <p class="review-text">
+        Amazing experience with Maria! She was absolutely stunning
+        and so sweet. The whole booking process was super smooth.
+        Highly recommended.
+      </p>
+
+      <div class="stars">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+      </div>
+
+      <div class="review-footer">
+        <img src="https://i.pravatar.cc/40?img=45">
+        <div>
+          <strong>Anil</strong>
+          <small>Feb 15, 2026</small>
+          <span>Rated 5 / 5 reviews</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- FIND MATCH SECTION -->
+<section class="find-match">
+
+  <div class="find-head">
+    <h2>Find Your Perfect Match?</h2>
+
+    <div class="verified-pill">
+      <i class="fa-solid fa-shield-check"></i>
+      100% Verified & Safe Profiles
+    </div>
+  </div>
+
+  <div class="match-grid">
+
+    <div class="match-card">
+      <i class="fa-solid fa-graduation-cap pink"></i>
+      <p>College Girls</p>
+    </div>
+
+    <div class="match-card">
+      <i class="fa-solid fa-user purple"></i>
+      <p>Models</p>
+    </div>
+
+    <div class="match-card">
+      <i class="fa-solid fa-crown yellow"></i>
+      <p>VIP Escorts</p>
+    </div>
+
+    <div class="match-card">
+      <i class="fa-solid fa-heart red"></i>
+      <p>Housewives</p>
+    </div>
+
+    <div class="match-card">
+      <i class="fa-solid fa-star orange"></i>
+      <p>Celebrity</p>
+    </div>
+
+    <div class="match-card">
+      <i class="fa-solid fa-earth-europe blue"></i>
+      <p>Russian</p>
+    </div>
+
+  </div>
+</section>
+<!-- TRUST SECTION -->
+<section class="trust-section">
+  <h2>
+    Escorts are missing one thing:<br>
+    <span>Trust.</span> We're building it.
+  </h2>
+
+  <p>
+    Today, Raasleela is a trust-enabled escort service designed to increase
+    client confidence through <a href="#">verified profiles</a>,
+    <a href="#">transparent pricing</a>, and personalized companion matching
+    across the entire <a href="#">Hyderabad region</a>.
+  </p>
+</section>
+<!-- ========== GUARANTEE SECTION ========== -->
+<section class="guarantee-section">
+
+  <!-- TOP ICONS -->
+  <h2 class="guarantee-title">The Raasleela Guarantee</h2>
+
+  <div class="guarantee-icons">
+    <div class="g-item">
+      <i class="fa-solid fa-shield-check pink"></i>
+      <p>Handpicked &<br>Verified Profiles</p>
+    </div>
+
+    <div class="g-item">
+      <i class="fa-solid fa-phone blue"></i>
+      <p>24/7 Concierge<br>Support</p>
+    </div>
+
+    <div class="g-item">
+      <i class="fa-solid fa-user purple"></i>
+      <p>Personalized<br>Matchmaking</p>
+    </div>
+
+    <div class="g-item">
+      <i class="fa-solid fa-lock green"></i>
+      <p>Discreet & Confidential<br>Go Paperless</p>
+    </div>
+  </div>
+
+  <!-- BOTTOM CARD -->
+  <div class="guarantee-card">
+
+    <div class="guarantee-left">
+      <h3>
+        Transform Your<br>
+        Nights with<br>
+        <span>Raasleela</span>
+      </h3>
+    </div>
+
+    <div class="guarantee-right">
+      <h4>Why choose us?</h4>
+
+      <p>
+        Compare & choose from
+        <span>100+ verified escorts</span><br>
+        Book instantly with our 24/7 concierge service
+      </p>
+
+      <div class="guarantee-buttons">
+        <a href="#" class="btn primary">Browse Escorts</a>
+        <a href="#" class="btn outline">Get Quote</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
 
 
 
