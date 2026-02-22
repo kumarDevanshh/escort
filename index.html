@@ -2149,7 +2149,104 @@ header{
   line-height:1.1;
   color:#fff;
   opacity:.9;
+}/* ========== RESPONSIVE FOOTER ========== */
+
+/* TABLET */
+@media(max-width:1024px){
+  .mega-footer{
+    flex-direction:column;
+  }
+
+  .footer-left,
+  .footer-right{
+    width:100%;
+  }
+
+  .footer-right{
+    border-top-left-radius:120px;
+    padding:40px;
+  }
+
+  .girls-img{
+    height:380px;
+  }
 }
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .mega-footer{
+    flex-direction:column;
+  }
+
+  /* IMAGE SECTION */
+  .footer-left{
+    height:320px;
+  }
+
+  .girls-img{
+    height:100%;
+    object-position:top;
+  }
+
+  .bubble{
+    top:20px;
+    font-size:12px;
+    padding:10px 14px;
+  }
+
+  /* RIGHT CONTENT */
+  .footer-right{
+    border-top-left-radius:60px;
+    padding:30px 22px;
+  }
+
+  /* BRAND */
+  .footer-brand h2{
+    font-size:22px;
+  }
+
+  /* LINKS STACK */
+  .footer-links{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  /* BUTTON CHIPS */
+  .action-btns button{
+    font-size:11px;
+    padding:7px 12px;
+  }
+
+  /* HASHTAG CENTER */
+  .footer-hashtag{
+    font-size:28px;
+    text-align:center;
+    margin-top:25px;
+  }
+
+  /* SOCIAL ICONS */
+  .social-icons span{
+    width:34px;
+    height:34px;
+    font-size:14px;
+  }
+}
+
+/* SMALL MOBILE */
+@media(max-width:480px){
+  .footer-right{
+    border-top-left-radius:40px;
+    padding:22px 18px;
+  }
+
+  .footer-hashtag{
+    font-size:24px;
+  }
+}
+ 
+
+
 </style>
 </head>
 
