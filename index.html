@@ -2017,28 +2017,28 @@ header{
   color:#000;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-  .find-near h2{
-    font-size:30px;
-  }
-}/* ========== FOOTER BASE ========== */
+/* ============ FINAL FOOTER OVERRIDE (FORCE FIX) ============ */
+
+/* ========== FOOTER BASE ========== */
 .mega-footer{
-  background:#1f1f1f;
-  color:#fff;
   display:flex;
-  min-height:520px;
-  position:relative;
+  background:#0f0f0f;
+  color:#fff;
   overflow:hidden;
+  animation:footerFade .9s ease;
 }
 
-/* LEFT SIDE */
+@keyframes footerFade{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* LEFT IMAGE */
 .footer-left{
-  width:45%;
+  width:40%;
   position:relative;
 }
-
-.girls-img{
+.footer-left img{
   width:100%;
   height:100%;
   object-fit:cover;
@@ -2047,24 +2047,30 @@ header{
 /* SPEECH BUBBLE */
 .bubble{
   position:absolute;
-  top:40px;
+  top:25px;
   left:50%;
   transform:translateX(-50%);
-  background:#eee;
+  background:#fff;
   color:#000;
-  padding:14px 18px;
-  border-radius:50%;
-  font-size:14px;
+  padding:10px 16px;
+  border-radius:30px;
+  font-size:12px;
   font-weight:700;
+  animation:pulse 2.5s infinite;
 }
 .bubble span{ color:#7b2cff; }
 
+@keyframes pulse{
+  0%,100%{transform:translateX(-50%) scale(1);}
+  50%{transform:translateX(-50%) scale(1.08);}
+}
+
 /* RIGHT SIDE */
 .footer-right{
-  width:55%;
-  background:#0e0e0e;
-  border-top-left-radius:200px;
-  padding:50px 60px;
+  width:60%;
+  background:linear-gradient(145deg,#0b0b0b,#161616);
+  border-top-left-radius:160px;
+  padding:50px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
@@ -2079,16 +2085,23 @@ header{
   font-size:12px;
   opacity:.7;
 }
-.social-icons span{
-  display:inline-flex;
+
+/* SOCIAL ICONS */
+.social-icons i{
   width:38px;
   height:38px;
+  background:#1c1c1c;
   border-radius:50%;
-  background:#1f1f1f;
+  display:inline-flex;
   align-items:center;
   justify-content:center;
   margin-right:8px;
   cursor:pointer;
+  transition:.3s;
+}
+.social-icons i:hover{
+  background:#ff007a;
+  transform:translateY(-4px);
 }
 
 /* LINKS */
@@ -2097,31 +2110,33 @@ header{
   grid-template-columns:1fr 1fr 1.5fr;
   gap:30px;
 }
-
 .footer-links h4{
-  margin-bottom:12px;
-  font-size:14px;
+  margin-bottom:10px;
 }
-
 .footer-links a{
   display:block;
+  color:#bbb;
   font-size:13px;
   margin-bottom:6px;
-  color:#ccc;
   text-decoration:none;
+  transition:.3s;
+}
+.footer-links a:hover{
+  color:#ff007a;
+  transform:translateX(6px);
 }
 
-/* CUSTOMER CENTER */
+/* BUTTONS */
 .action-btns{
   display:flex;
   flex-wrap:wrap;
-  gap:10px;
+  gap:8px;
 }
 .action-btns button{
   background:#000;
   color:#fff;
   border:1px solid #333;
-  padding:8px 14px;
+  padding:7px 14px;
   border-radius:20px;
   font-size:12px;
   cursor:pointer;
@@ -2131,121 +2146,48 @@ header{
 }
 
 /* CONTACT ICONS */
-.contact-icons span{
-  display:inline-flex;
-  width:36px;
-  height:36px;
-  background:#111;
+.contact-icons i{
+  width:34px;
+  height:34px;
+  background:#1c1c1c;
   border-radius:50%;
+  display:inline-flex;
   align-items:center;
   justify-content:center;
-  margin-right:8px;
+  margin-right:6px;
 }
 
 /* HASHTAG */
 .footer-hashtag{
-  font-size:36px;
+  font-size:34px;
   font-weight:800;
   line-height:1.1;
-  color:#fff;
-  opacity:.9;
-}/* ========== RESPONSIVE FOOTER ========== */
-
-/* TABLET */
-@media(max-width:1024px){
-  .mega-footer{
-    flex-direction:column;
-  }
-
-  .footer-left,
-  .footer-right{
-    width:100%;
-  }
-
-  .footer-right{
-    border-top-left-radius:120px;
-    padding:40px;
-  }
-
-  .girls-img{
-    height:380px;
-  }
 }
 
-/* MOBILE */
+/* ========== RESPONSIVE ========== */
 @media(max-width:768px){
-
   .mega-footer{
-    flex-direction:column;
+    flex-direction:row;
   }
-
-  /* IMAGE SECTION */
-  .footer-left{
-    height:320px;
-  }
-
-  .girls-img{
-    height:100%;
-    object-position:top;
-  }
-
-  .bubble{
-    top:20px;
-    font-size:12px;
-    padding:10px 14px;
-  }
-
-  /* RIGHT CONTENT */
+  .footer-left{width:35%;}
   .footer-right{
-    border-top-left-radius:60px;
-    padding:30px 22px;
+    width:65%;
+    padding:25px 20px;
+    border-top-left-radius:50px;
   }
-
-  /* BRAND */
-  .footer-brand h2{
-    font-size:22px;
-  }
-
-  /* LINKS STACK */
   .footer-links{
     grid-template-columns:1fr;
-    gap:25px;
   }
-
-  /* BUTTON CHIPS */
-  .action-btns button{
-    font-size:11px;
-    padding:7px 12px;
-  }
-
-  /* HASHTAG CENTER */
   .footer-hashtag{
-    font-size:28px;
-    text-align:center;
-    margin-top:25px;
-  }
-
-  /* SOCIAL ICONS */
-  .social-icons span{
-    width:34px;
-    height:34px;
-    font-size:14px;
+    font-size:22px;
   }
 }
 
-/* SMALL MOBILE */
 @media(max-width:480px){
-  .footer-right{
-    border-top-left-radius:40px;
-    padding:22px 18px;
-  }
-
-  .footer-hashtag{
-    font-size:24px;
-  }
+  .footer-left{width:30%;}
+  .footer-right{width:70%;}
+  .bubble{display:none;}
 }
- 
-
 
 </style>
 </head>
@@ -3370,28 +3312,32 @@ New Arrivals Every Week – Stay Tuned 🔥 Hyderabad Runs On Raasleela!
 </section>
 <footer class="mega-footer">
 
-  <!-- LEFT IMAGE AREA -->
+  <!-- LEFT IMAGE -->
   <div class="footer-left">
-    <img src="https://images.unsplash.com/photo-1520974735194-8d1c1c1b8c7d" class="girls-img" alt="">
-    <div class="bubble">LOVE & SEX<br>WITHOUT <span>DHOKA</span></div>
+    <img src="https://images.unsplash.com/photo-1520974735194-8d1c1c1b8c7d" alt="Raasleela" />
+    <div class="bubble">
+      LOVE & SEX<br>WITHOUT <span>DHOKA</span>
+    </div>
   </div>
 
   <!-- RIGHT CONTENT -->
   <div class="footer-right">
 
+    <!-- BRAND -->
     <div class="footer-brand">
       <h2>raasleela.net</h2>
       <p>crave more doubt less</p>
 
       <div class="social-icons">
-        <span>📸</span>
-        <span>📘</span>
-        <span>🐦</span>
-        <span>▶</span>
-        <span>💬</span>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-whatsapp"></i>
       </div>
     </div>
 
+    <!-- LINKS -->
     <div class="footer-links">
 
       <div>
@@ -3414,7 +3360,7 @@ New Arrivals Every Week – Stay Tuned 🔥 Hyderabad Runs On Raasleela!
         <a href="#">Join Us</a>
       </div>
 
-      <div class="customer-center">
+      <div>
         <h4>★ CUSTOMER CENTER ★</h4>
 
         <div class="action-btns">
@@ -3427,22 +3373,21 @@ New Arrivals Every Week – Stay Tuned 🔥 Hyderabad Runs On Raasleela!
         </div>
 
         <div class="contact-icons">
-          <span>✉</span>
-          <span>📞</span>
-          <span>🔁</span>
-          <span>💬</span>
-          <span>🟢</span>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-comment"></i>
+          <i class="fab fa-whatsapp"></i>
         </div>
       </div>
 
     </div>
 
+    <!-- HASHTAG -->
     <div class="footer-hashtag">
       #Crave<br>More<br>Doubt<br>Less
     </div>
 
   </div>
-
 </footer>
 
 </body>
