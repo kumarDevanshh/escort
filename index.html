@@ -2187,6 +2187,69 @@ header{
   .footer-left{width:30%;}
   .footer-right{width:70%;}
   .bubble{display:none;}
+}/* NAVBAR */
+.nav-links {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav-links > a,
+.nav-item > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 6px;
+}
+
+/* WRAPPER */
+.nav-item {
+  position: relative;
+}
+
+/* DROPDOWN BASE */
+.dropdown {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background: #000;
+  padding: 18px 22px;
+  border-radius: 10px;
+  display: flex;
+  gap: 40px;
+  min-width: 420px;
+  z-index: 9999;
+
+  display: none; /* 🔥 KEY LINE */
+}
+
+/* SMALL DROPDOWN */
+.dropdown.small {
+  min-width: 260px;
+}
+
+/* SHOW ON HOVER */
+.nav-item:hover .dropdown {
+  display: flex;
+}
+
+/* DROPDOWN CONTENT */
+.dropdown h4 {
+  color: #ff2b85;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.dropdown a {
+  display: block;
+  color: #ccc;
+  font-size: 13px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.dropdown a:hover {
+  color: #fff;
 }
 
 </style>
@@ -2207,13 +2270,75 @@ New Arrivals Every Week – Stay Tuned 🔥 Hyderabad Runs On Raasleela!
   </div>
 
   <div class="nav-links">
-    <a href="#"><i class="fa-solid fa-compass"></i>Explore</a>
-    <a href="#"><i class="fa-solid fa-mars"></i>For Men</a>
-    <a href="#"><i class="fa-solid fa-heart"></i>For Couples</a>
-    <a href="#"><i class="fa-solid fa-hotel"></i>Hotels</a>
-    <a href="#"><i class="fa-solid fa-tags"></i>Price</a>
-    <a href="#"><i class="fa-solid fa-star"></i>Reviews</a>
+    <div class="nav-links">
+
+  <!-- EXPLORE -->
+  <div class="nav-item">
+    <a href="#">Explore</a>
+    <div class="dropdown">
+      <div>
+        <h4>POPULAR AREAS</h4>
+        <a href="/escorts/indiranagar.html">indiranagar</a>
+        <a href="/escorts/Koramangala.html">Koramangala</a>
+        <a href="/escorts/BTM Layout.html">btm</a>
+      </div>
+      <div>
+        <h4>TOP LOCATIONS</h4>
+        <a href="/escorts/Madiwala.html">Madiwala</a>
+        <a>Electronic City</a>
+        <a>MG Road</a>
+      </div>
+      <div>
+        <h4>MORE AREAS</h4>
+        <a>Shivaji Nagar</a>
+        <a>Whitefield</a>
+        <a>UB City</a>
+      </div>
+    </div>
   </div>
+
+  <!-- FOR MEN -->
+  <div class="nav-item">
+    <a href="#">For Men</a>
+    <div class="dropdown">
+      <div>
+        <h4>LATEST ARRIVALS</h4>
+        <a>GFE Escorts</a>
+        <a>VIP Models</a>
+        <a>Dating Girls</a>
+      </div>
+      <div>
+        <h4>POPULAR SERVICES</h4>
+        <a>Private Girls</a>
+        <a>College Girls</a>
+        <a>Housewife</a>
+        <a>Teenage Girls</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOR COUPLES -->
+  <div class="nav-item">
+    <a href="#">For Couples</a>
+    <div class="dropdown small">
+      <div>
+        <h4>COUPLE SERVICES</h4>
+        <a>Threesome Escorts</a>
+        <a>Travel Companions</a>
+        <a>Erotic Massage</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIMPLE LINKS -->
+  <a href="#">Call Girls</a>
+  <a href="#">Hotels</a>
+  <a href="#">Price</a>
+  <a href="#">Stories</a>
+  <a href="#">Reviews</a>
+
+</div>
+    
 </header>
 
 <section class="hero">
